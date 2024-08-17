@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MON SITE</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+ rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">  
+   <style>
+    .btn:hover {
+    background-color: green;
+}
+
+   </style>
+    
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-2">
+        <h1 class=" shadow">CHAKROUF</h1>
+    </header>
+    <button id="idBouton" class="btn btn-warning my-2  btn-lg">Clique moi</button>
+    <div class="container my-5">
+         <div id=idDiv class="row row-cols-1 row-cols-md-2 row-cols-lg-4" >
+            <div class="col">
+                 <div class="card">
+                    <img class="card-img-top" src="Itachi.webp"   style="height: 200px; width: 305.5px;">
+                        <div class="card-body">
+                          <h4 class="card-title">ITACHI</h4>
+                          <p class="card-text">AMATERASU</p>
+                          <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="Uchiwa_Shisui.webp" style="height: 200px; width: 305.5px;">
+                        <div class="card-body">
+                          <h4 class="card-title">SHISUI</h4>
+                          <p class="card-text">KOTOAMATSUKAMI</p>
+                          <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="OBITO.png"  style="height: 200px; width: 305.5px;">
+                        <div class="card-body">
+                          <h4 class="card-title">OBITO</h4>
+                          <p class="card-text">KAMUI</p>
+                          <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="madara_uchiha_sharingan.webp"  style="height: 200px; width: 305.5px;">
+                        <div class="card-body">
+                          <h4 class="card-title">MADARA</h4>
+                          <p class="card-text">SUSANOO</p>
+                          <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p> UCHIHA FAM.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('#idDiv').hide();
+        $('#idBouton').on('click',function(){
+          $("#idDiv").toggle(2000);
+          $('body').css("backgroundColor","white")
+        })
+    </script>
+</body>
+</html>
